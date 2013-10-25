@@ -24,6 +24,7 @@ your preference.
 - [Regular Functions](#regular-functions)
 - [Templated Functions](#templated-functions)
 - [Using Statements](#using-statements)
+- [Functors](#functors)
 
 ### Do While Loop
 
@@ -201,3 +202,39 @@ There is also a non-templated version.
 using $1 = $2;
 ```
 
+
+### Functors
+
+**Trigger**: functor
+
+```cpp
+struct $1 {
+    $2 operator()($3) const noexcept {
+        $0
+    }
+};
+```
+
+There are also templated variations of functors:
+
+**Trigger**: tempfunctor
+
+```cpp
+struct $1 {
+    template<typename T>
+    constexpr auto operator()(T&& t) const noexcept -> decltype($2) {
+        return $2;
+    }
+};
+```
+
+**Trigger**: bintempfunctor
+
+```cpp
+struct $1 {
+    template<typename T, typename U>
+    constexpr auto operator()(T&& t, U&& u) const noexcept -> decltype($2) {
+        return $2;
+    }
+};
+```
