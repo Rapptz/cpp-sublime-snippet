@@ -3,8 +3,6 @@
     <content><![CDATA[-> decltype(${1:data}${1/^.*?(-)?(>)?$/(?2::(?1:>:))/}) {
     return ${1:data}${1/^.*?(-)?(>)?$/(?2::(?1:>:))/};
 }]]></content>
-    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>returns</tabTrigger>
-    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.c++</scope>
 </snippet>
