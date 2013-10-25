@@ -1,6 +1,6 @@
 <snippet>
     <description>Regular function</description>
-    <content><![CDATA[${1:int} ${2:function_name}($3{/* args */}) {
+    <content><![CDATA[${1:int} ${2:function_name}(${3:/* args */}) {
 	${0:/* code */}
 }]]></content>
     <tabTrigger>funct</tabTrigger>
