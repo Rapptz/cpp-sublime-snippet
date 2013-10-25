@@ -17,3 +17,7 @@ At the moment the only way to install this is to run `git clone` where you keep 
 ## Documentation
 
 Documentation can be found in the reference.md file.
+
+## License
+
+The overall collection of snippets is licensed under the MIT License but the individual snippets themselves are CC0.
