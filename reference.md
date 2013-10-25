@@ -21,6 +21,7 @@ your preference.
 - [MIT License](#mit-license)
 - [Struct](#struct)
 - [Template](#template)
+- [Regular Functions](#regular-functions)
 - [Templated Functions](#templated-functions)
 - [Using Statements](#using-statements)
 
@@ -139,6 +140,26 @@ struct $1 {
 
 ```cpp
 template<typename $1>
+```
+
+### Regular Functions
+
+**Trigger**: funct
+
+```cpp
+$1 $2($3) {
+    $0
+}
+```
+
+There is a `constexpr` variation:
+
+**Trigger**: confunct
+
+```cpp
+constexpr $1 $2($3) {
+    return $0;
+}
 ```
 
 ### Templated Functions
