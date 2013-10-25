@@ -1,7 +1,7 @@
 <snippet>
-    <description>ifndef (...)</description>
+    <description>ifndef (…)</description>
     <content><![CDATA[#ifndef $1
-#define ${1:SYMBOL}
+#define ${1:${TM_FILENAME/(([A-Z])([A-Z][a-z]))|(([a-z])([A-Z]))|([a-z])|(\.)/\U(?1:$2_$3)(?4:$5_$6)$7(?8:_)\E/g}}
 
 ${0}
 
