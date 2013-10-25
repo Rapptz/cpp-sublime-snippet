@@ -1,0 +1,11 @@
+<snippet>
+    <description>ifndef (...)</description>
+    <content><![CDATA[#ifndef $1
+#define ${1:SYMBOL}
+
+${0}
+
+#endif // $1]]></content>
+    <tabTrigger>ifnd</tabTrigger>
+    <scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>
