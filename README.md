@@ -14,3 +14,6 @@ if(/* condition */) {
 
 At the moment the only way to install this is to run `git clone` where you keep your packages. Maybe one day I'll add this to the Package Control.
 
+## Documentation
+
+Documentation can be found in the reference.md file.
