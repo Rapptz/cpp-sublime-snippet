@@ -22,7 +22,7 @@ your preference.
 - [Struct](#struct)
 - [Template](#template)
 - [Templated Functions](#templated-functions)
-
+- [Using Statements](#using-statements)
 
 ### Do While Loop
 
@@ -161,5 +161,22 @@ template<typename $1>
 constexpr auto $2($3) noexcept -> decltype($4) {
     return $4;
 }
+```
+
+### Using Statements
+
+**Trigger**: usingt
+
+```cpp
+template<typename $1>
+using $2 = $3;
+```
+
+There is also a non-templated version.
+
+**Trigger**: usings
+
+```cpp
+using $1 = $2;
 ```
 
