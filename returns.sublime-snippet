@@ -1,7 +1,7 @@
 <snippet>
     <description>-> decltype(...)</description>
-    <content><![CDATA[-> decltype(${1:data}${1/^.*?(-)?(>)?$/(?2::(?1:>:))/}) {
-    return ${1:data}${1/^.*?(-)?(>)?$/(?2::(?1:>:))/};
+    <content><![CDATA[-> decltype(${1:/* code */}) {
+	return ${1:/* code */};
 }]]></content>
     <tabTrigger>returns</tabTrigger>
     <scope>source.c++</scope>
