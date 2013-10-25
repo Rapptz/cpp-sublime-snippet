@@ -1,0 +1,9 @@
+<snippet>
+    <description>templated function (auto)</description>
+    <content><![CDATA[template<typename ${1:T}>
+constexpr auto ${2:function_name}(${3:/* args */}) noexcept -> decltype(${4:/* code */}) {
+	return ${4:/* code */};
+}]]></content>
+    <tabTrigger>tempf</tabTrigger>
+    <scope>source.c++</scope>
+</snippet>
