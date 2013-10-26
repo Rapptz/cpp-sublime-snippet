@@ -9,15 +9,11 @@ your preference.
 
 ## Table of Contents
 
-- [Do While Loop](#do-while-loop)
-- [While Loop](#while-loop)
-- [For Loop](#for-loop)
-- [Range Based For](#range-based-for)
-- [Forward](#forward)
+- [Loops](#loops)
+- [Little Utilities](#little-utilities)
 - [If Statement](#if-statement)
 - [Header Guards](#header-guards)
 - [Namespace](#namespace)
-- [Trailing Return](#trailing-return-type)
 - [MIT License](#mit-license)
 - [Struct](#struct)
 - [Template](#template)
@@ -26,7 +22,9 @@ your preference.
 - [Using Statements](#using-statements)
 - [Functors](#functors)
 
-### Do While Loop
+### Loops
+
+A collection of loop auto completions.
 
 **Trigger**: do
 
@@ -36,8 +34,6 @@ do {
 } while ($1);
 ```
 
-### While Loop
-
 **Trigger**: while
 
 ```cpp
@@ -45,8 +41,6 @@ while($1) {
     $0
 }
 ```
-
-### For Loop
 
 **Trigger**: for
 
@@ -56,8 +50,6 @@ for(unsigned $2 = 0; $2 < $1; ${3:++$2}) {
 }
 ```
 
-### Range-Based For
-
 **Trigger**: forv
 
 ```cpp
@@ -66,12 +58,28 @@ for(auto&& $1 : $2) {
 }
 ```
 
-### Forward
+### Little Utilities
+
+Small simple stuff that can help with some typing.
 
 **Trigger**: forw
 
 ```cpp
 std::forward<$1>($2)
+```
+
+**Trigger**: declv
+
+```cpp
+std::declval<$1>()
+```
+
+**Trigger**: returns
+
+```cpp
+-> decltype($1) {
+    return $1;
+}
 ```
 
 ### If Statement
@@ -92,7 +100,7 @@ if ($1) {
 #ifndef $1
 #define $1
 
-${0}
+$0
 
 #endif // $1
 ```
@@ -107,16 +115,6 @@ This snippet defaults to inserting the filename in all caps. e.g. `myheader.hpp`
 namespace $1 {
 $0
 } // $1
-```
-
-### Trailing Return Type
-
-**Trigger**: returns
-
-```cpp
--> decltype($1) {
-    return $1;
-}
 ```
 
 ### MIT License
