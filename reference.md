@@ -92,6 +92,17 @@ if ($1) {
 }
 ```
 
+**Trigger**: ifelse
+
+```cpp
+if($1) {
+    $2
+}
+else {
+    $0
+}
+```
+
 **Trigger**: ifelif
 
 ```cpp
