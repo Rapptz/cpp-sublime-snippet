@@ -11,7 +11,7 @@ your preference.
 
 - [Loops](#loops)
 - [Little Utilities](#little-utilities)
-- [If Statement](#if-statement)
+- [Conditional Statements](#conditional-statements)
 - [Header Guards](#header-guards)
 - [Namespace](#namespace)
 - [MIT License](#mit-license)
@@ -82,12 +82,26 @@ std::declval<$1>()
 }
 ```
 
-### If Statement
+### Conditional Statements
 
 **Trigger**: if
 
 ```cpp
 if ($1) {
+    $0
+}
+```
+
+**Trigger**: ifelif
+
+```cpp
+if($1) {
+    $2
+}
+else if($3) {
+    $4
+}
+else {
     $0
 }
 ```

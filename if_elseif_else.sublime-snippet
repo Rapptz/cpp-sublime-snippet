@@ -1,0 +1,14 @@
+<snippet>
+    <description>if … else if … else</description>
+    <content><![CDATA[if(${1:/* condition */}) {
+	${2:/* code */}
+}
+else if(${3:/* condition */}) {
+	${4:/* code */}
+}
+else {
+	${0:/* code */}
+}]]></content>
+    <tabTrigger>ifelif</tabTrigger>
+    <scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>
