@@ -19,7 +19,7 @@ There are two ways to install these snippets, with the first being the easiest w
 - Type Install and you'll see "Package Control: Install Package"
 - Type "C++ Snippets" and it should be the first result.
 
-The other and more arguably harder way to install the package is to go to your package directory and run 
+The other and arguably harder way to install the package is to go to your package directory and run 
 
 `git clone https://github.com/Rapptz/cpp-sublime-snippet.git`
 
