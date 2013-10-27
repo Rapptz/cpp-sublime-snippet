@@ -1,0 +1,22 @@
+====================
+    C++ Snippets
+====================
+
+Hello!
+
+Thanks for installing this package. This package started out of some frustration
+with the lack of decent C++ plugins in Sublime Text. I figured the first step
+to improving that would make some basic snippets that can be seen as verbose for
+people to write.
+
+You're welcome to recommend any snippets in the issue page of the repository which
+can be found here: https://github.com/Rapptz/cpp-sublime-snippet/issues
+
+You're also welcome to fork the snippets page and send in a pull request with your
+snippet. The only thing I ask is that you keep the style consistent with the other
+snippets.
+
+Documentation for the snippets can be found the reference, which can is conveniently
+here: https://github.com/Rapptz/cpp-sublime-snippet/blob/master/reference.md
+
+Thank you for using these snippets!

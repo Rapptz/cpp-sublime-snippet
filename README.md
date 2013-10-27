@@ -12,7 +12,17 @@ if(/* condition */) {
 
 ## Installation
 
-At the moment the only way to install this is to run `git clone` where you keep your packages. Maybe one day I'll add this to the Package Control.
+There are two ways to install these snippets, with the first being the easiest with the 
+[Package Control](https://sublime.wbond.net). 
+
+- Press Ctrl + Shift + P
+- Type Install and you'll see "Package Control: Install Package"
+- Type "C++ Snippets" and it should be the first result.
+
+The other and more arguably harder way to install the package is to go to your package directory and run 
+
+`git clone https://github.com/Rapptz/cpp-sublime-snippet.git`
+
 
 ## Documentation
 
