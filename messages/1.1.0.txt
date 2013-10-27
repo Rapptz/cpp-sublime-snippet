@@ -16,5 +16,13 @@ New Snippets:
 |ifclangrestrict|Checks clang version.                         |
 |ifgccrestrict  |Checks GCC version.                           |
 |ifelifpre      |#if #elif #else for preprocessor              |
+|ifelsepre      |#if #else for preprocessor                    |
 |===============|==============================================|
 
+Changed Snippets:
+
+|===========|===========|==========================================|
+|Old Trigger|New Trigger|Description                               |
+|===========|===========|==========================================|
+|tempfunca  |tempcfunca | Trigger now specifies constexpr property |
+|===========|===========|==========================================|

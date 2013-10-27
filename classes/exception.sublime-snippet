@@ -1,6 +1,6 @@
 <snippet>
 	<description>Create exception</description>
-    <content><![CDATA[class ${1:name} : ${2:std::logic_error} {
+    <content><![CDATA[class ${1:name} : public ${2:std::logic_error} {
 public:
 	${1:name}(const std::string& str) noexcept: ${2:std::logic_error}(${3:str}) {}
 };]]></content>

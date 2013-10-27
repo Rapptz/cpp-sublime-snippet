@@ -158,6 +158,42 @@ $0
 
 This snippet defaults to inserting the filename in all caps. e.g. `myheader.hpp` would generate `MYHEADER_HPP`.
 
+**Trigger**: clanggreater
+
+Checks for Clang version definition greater than or equal to version specified (version `$1.$2`).
+
+```cpp
+defined(__clang__) && ((__clang_major__ > $1) || (__clang_major__ == $1) && (__clang_minor__ >= $2))
+```
+
+**Trigger**: gccgreater
+
+Checks for GCC version definition greater than or equal to version specified (version `$1.$2.0`)
+
+```cpp
+defined(__GNUC__) && ((__GNUC__ > $1) || ((__GNUC__ == $1) && (__GNUC_MINOR__ >= $2)))
+```
+
+**Trigger**: ifelifpre
+
+```cpp
+#if $1
+$2
+#elif $3
+$4
+#else
+$0
+```
+
+**Trigger**: ifelsepre
+
+```cpp
+#if $1
+$2
+#else
+$0
+```
+
 ### Classes
 
 **Trigger**: struct
@@ -165,6 +201,17 @@ This snippet defaults to inserting the filename in all caps. e.g. `myheader.hpp`
 ```cpp
 struct $1 {
     $0
+};
+```
+
+**Trigger**: excep
+
+Creates an exception derived from an std::exception entity.
+
+```cpp
+class $1 : public $2 {
+public:
+    $1(const std::string& str): $2($3) {}
 };
 ```
 
@@ -202,9 +249,7 @@ $2 $3($4) noexcept {
 }
 ```
 
-There is also an alternative with `auto`:
-
-**Trigger**: tempfunca
+**Trigger**: tempcfunca
 
 ```cpp
 template<typename $1>
