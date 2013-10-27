@@ -10,16 +10,11 @@ your preference.
 ## Table of Contents
 
 - [Loops](#loops)
-- [Little Utilities](#little-utilities)
+- [Utilities](#utilities)
 - [Conditional Statements](#conditional-statements)
-- [Header Guards](#header-guards)
-- [Namespace](#namespace)
-- [MIT License](#mit-license)
-- [Struct](#struct)
-- [Template](#template)
-- [Regular Functions](#regular-functions)
-- [Templated Functions](#templated-functions)
-- [Using Statements](#using-statements)
+- [Preprocessor](#preprocessor)
+- [Classes](#classes)
+- [Functions](#functions)
 - [Functors](#functors)
 
 ### Loops
@@ -58,7 +53,7 @@ for(auto&& $1 : $2) {
 }
 ```
 
-### Little Utilities
+### Utilities
 
 Small simple stuff that can help with some typing.
 
@@ -81,6 +76,37 @@ std::declval<$1>()
     return $1;
 }
 ```
+
+**Trigger**: name
+
+```cpp
+namespace $1 {
+$0
+} // $1
+```
+
+**Trigger**: usingt
+
+```cpp
+template<typename $1>
+using $2 = $3;
+```
+
+**Trigger**: usings
+
+```cpp
+using $1 = $2;
+```
+
+**Trigger**: tem
+
+```cpp
+template<typename $1>
+```
+
+**Trigger**: mitl
+
+A snippet that generates an MIT License with input choices for your name and year.
 
 ### Conditional Statements
 
@@ -117,7 +143,7 @@ else {
 }
 ```
 
-### Header Guards
+### Preprocessor
 
 **Trigger**: ifnd
 
@@ -132,23 +158,7 @@ $0
 
 This snippet defaults to inserting the filename in all caps. e.g. `myheader.hpp` would generate `MYHEADER_HPP`.
 
-### Namespace
-
-**Trigger**: name
-
-```cpp
-namespace $1 {
-$0
-} // $1
-```
-
-### MIT License
-
-**Trigger**: mitl
-
-A snippet that generates an MIT License with input choices for your name and year.
-
-### Struct
+### Classes
 
 **Trigger**: struct
 
@@ -158,15 +168,10 @@ struct $1 {
 };
 ```
 
-### Template
+### Functions
 
-**Trigger**: tem
+#### Regular functions
 
-```cpp
-template<typename $1>
-```
-
-### Regular Functions
 
 **Trigger**: funct
 
@@ -186,7 +191,7 @@ constexpr $1 $2($3) {
 }
 ```
 
-### Templated Functions
+#### Templated Functions
 
 **Trigger**: tempfunc
 
@@ -207,24 +212,6 @@ constexpr auto $2($3) noexcept -> decltype($4) {
     return $4;
 }
 ```
-
-### Using Statements
-
-**Trigger**: usingt
-
-```cpp
-template<typename $1>
-using $2 = $3;
-```
-
-There is also a non-templated version.
-
-**Trigger**: usings
-
-```cpp
-using $1 = $2;
-```
-
 
 ### Functors
 
