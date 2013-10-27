@@ -249,6 +249,15 @@ $2 $3($4) noexcept {
 }
 ```
 
+**Trigger**: tempcfunc
+
+```cpp
+template<typename $1>
+constexpr $2 $3($4) {
+    return $5;
+}
+```
+
 **Trigger**: tempcfunca
 
 ```cpp

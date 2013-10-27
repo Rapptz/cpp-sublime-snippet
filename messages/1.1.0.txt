@@ -13,10 +13,11 @@ New Snippets:
 |Trigger        |Description                                   |
 |===============|==============================================|
 |excep          |Creates a template for a basic exception.     |
-|ifclangrestrict|Checks clang version.                         |
-|ifgccrestrict  |Checks GCC version.                           |
+|clanggreater   |Checks for clang version >= specified.        |
+|gccgreater     |Checks for GCC version >= specified.          |
 |ifelifpre      |#if #elif #else for preprocessor              |
 |ifelsepre      |#if #else for preprocessor                    |
+|tempcfunc      |Templated constexpr function                  |
 |===============|==============================================|
 
 Changed Snippets:
