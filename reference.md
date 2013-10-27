@@ -21,7 +21,7 @@ your preference.
 
 A collection of loop auto completions.
 
-**Trigger**: do
+**Trigger**: do_
 
 ```cpp
 do {
@@ -37,7 +37,7 @@ while($1) {
 }
 ```
 
-**Trigger**: for
+**Trigger**: for_
 
 ```cpp
 for(unsigned $2 = 0; $2 < $1; ${3:++$2}) {
@@ -45,7 +45,7 @@ for(unsigned $2 = 0; $2 < $1; ${3:++$2}) {
 }
 ```
 
-**Trigger**: forv
+**Trigger**: forrange
 
 ```cpp
 for(auto&& $1 : $2) {
@@ -110,7 +110,7 @@ A snippet that generates an MIT License with input choices for your name and yea
 
 ### Conditional Statements
 
-**Trigger**: if
+**Trigger**: if_
 
 ```cpp
 if($1) {
@@ -171,7 +171,7 @@ defined(__clang__) && ((__clang_major__ > $1) || (__clang_major__ == $1) && (__c
 Checks for Clang version definition less than or equal to version specified (version `$1.$2`).
 
 ```cpp
-defined(__clang__) && ((__clang_major__ <= $1) && (__clang_minor__ <= $2))
+defined(__clang__) && ((__clang_major__ < $1) || (__clang_major__ == $1) && (__clang_minor__ <= $2))
 ```
 
 **Trigger**: gccgreater
@@ -187,7 +187,7 @@ defined(__GNUC__) && ((__GNUC__ > $1) || ((__GNUC__ == $1) && (__GNUC_MINOR__ >=
 Checks for GCC version definition less than or equal to version specified (version `$1.$2.0`)
 
 ```cpp
-defined(__GNUC__) && ((__GNUC__ <= $1) && (__GNUC_MINOR__ <= $2))
+defined(__GNUC__) && ((__GNUC__ < $1) || ((__GNUC__ == $1) && (__GNUC_MINOR__ <= $2)))
 ```
 
 **Trigger**: ifelifpre
@@ -212,11 +212,43 @@ $0
 
 ### Classes
 
-**Trigger**: struct
+**Trigger**: struct_
 
 ```cpp
 struct $1 {
     $0
+};
+```
+
+**Trigger**: structtemp
+
+```cpp
+template<typename $1>
+struct $2 {
+    $0
+};
+```
+
+**Trigger**: class_
+
+```cpp
+class $1 {
+private:
+    $2
+public:
+    $1($3) $4
+};
+```
+
+**Trigger**: classtemp
+
+```cpp
+template<typename $1>
+class $2 {
+private:
+    $3
+public:
+    $2($4) $5
 };
 ```
 

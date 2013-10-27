@@ -1,8 +1,8 @@
 <snippet>
 	<description>Create exception</description>
-    <content><![CDATA[class ${1:name} : public ${2:std::logic_error} {
+    <content><![CDATA[class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}} : public ${2:std::logic_error} {
 public:
-	${1:name}(const std::string& str) noexcept: ${2:std::logic_error}(${3:str}) {}
+	${1/(\w+).*/$1/}(const std::string& str) noexcept: ${2:std::logic_error}(${3:str}) {}
 };]]></content>
     <tabTrigger>excep</tabTrigger>
     <scope>source.c++, source.objc++</scope>

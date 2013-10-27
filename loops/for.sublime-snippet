@@ -3,6 +3,6 @@
     <content><![CDATA[for(unsigned ${2:i} = 0; $2 < ${1:count}; ${3:++$2}) {
 	${0:/* code */}
 }]]></content>
-    <tabTrigger>for</tabTrigger>
+    <tabTrigger>for_</tabTrigger>
     <scope>source.c, source.objc, source.c++, source.objc++</scope>
 </snippet>
