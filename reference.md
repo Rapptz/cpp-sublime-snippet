@@ -113,7 +113,7 @@ A snippet that generates an MIT License with input choices for your name and yea
 **Trigger**: if
 
 ```cpp
-if ($1) {
+if($1) {
     $0
 }
 ```
