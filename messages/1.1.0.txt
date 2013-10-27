@@ -13,6 +13,8 @@ New Snippets:
 |Trigger        |Description                                   |
 |===============|==============================================|
 |excep          |Creates a template for a basic exception.     |
-|ifclangrestrict|Checks clang version inputted                 |
+|ifclangrestrict|Checks clang version.                         |
+|ifgccrestrict  |Checks GCC version.                           |
+|ifelifpre      |#if #elif #else for preprocessor              |
 |===============|==============================================|
 
