@@ -9,9 +9,10 @@ Changes from v1.0.1 to v1.1.0 include:
 
 New Snippets:
 
-|=======|==============================================|
-|Trigger|Description                                   |
-|=======|==============================================|
-|excep  |Creates a template for a basic exception.     |
-|=======|==============================================|
+|===============|==============================================|
+|Trigger        |Description                                   |
+|===============|==============================================|
+|excep          |Creates a template for a basic exception.     |
+|ifclangrestrict|Checks clang version inputted                 |
+|===============|==============================================|
 
