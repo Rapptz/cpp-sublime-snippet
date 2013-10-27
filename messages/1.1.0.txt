@@ -15,15 +15,15 @@ New Snippets:
 |excep          |Creates a template for a basic exception.     |
 |clanggreater   |Checks for clang version >= specified.        |
 |gccgreater     |Checks for GCC version >= specified.          |
+|clangless      |Checks for clang version <= specified.        |
+|gccless        |Checks for GCC version <= specified.          |
 |ifelifpre      |#if #elif #else for preprocessor              |
 |ifelsepre      |#if #else for preprocessor                    |
 |tempcfunc      |Templated constexpr function                  |
+|tempfunca      |Templated auto function                       |
 |===============|==============================================|
 
 Changed Snippets:
 
-|===========|===========|==========================================|
-|Old Trigger|New Trigger|Description                               |
-|===========|===========|==========================================|
-|tempfunca  |tempcfunca | Trigger now specifies constexpr property |
-|===========|===========|==========================================|
+The old tempfunca snippet no longer has the constexpr qualifier and shared 
+input from decltype and return statement.

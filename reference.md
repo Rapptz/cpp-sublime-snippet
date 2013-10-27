@@ -166,12 +166,28 @@ Checks for Clang version definition greater than or equal to version specified (
 defined(__clang__) && ((__clang_major__ > $1) || (__clang_major__ == $1) && (__clang_minor__ >= $2))
 ```
 
+**Trigger**: clangless
+
+Checks for Clang version definition less than or equal to version specified (version `$1.$2`).
+
+```cpp
+defined(__clang__) && ((__clang_major__ <= $1) && (__clang_minor__ <= $2))
+```
+
 **Trigger**: gccgreater
 
 Checks for GCC version definition greater than or equal to version specified (version `$1.$2.0`)
 
 ```cpp
 defined(__GNUC__) && ((__GNUC__ > $1) || ((__GNUC__ == $1) && (__GNUC_MINOR__ >= $2)))
+```
+
+**Trigger**: gccless
+
+Checks for GCC version definition less than or equal to version specified (version `$1.$2.0`)
+
+```cpp
+defined(__GNUC__) && ((__GNUC__ <= $1) && (__GNUC_MINOR__ <= $2))
 ```
 
 **Trigger**: ifelifpre
@@ -245,6 +261,18 @@ constexpr $1 $2($3) {
 ```cpp
 template<typename $1>
 $2 $3($4) noexcept {
+    $0
+}
+```
+
+**Trigger**: tempfunca
+
+This snippet doesn't use the same input for the return type and decltype specifier. 
+If you want that, use `tempcfunc` instead.
+
+```cpp
+template<typename $1>
+auto $2($3) -> decltype($4) {
     $0
 }
 ```
