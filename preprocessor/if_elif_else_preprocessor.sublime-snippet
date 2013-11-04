@@ -5,7 +5,8 @@ ${2:/* code */}
 #elif ${3:/* condition */}
 ${4:/* code */}
 #else
-${0:/* code */}]]></content>
+${0:/* code */}
+#endif]]></content>
     <tabTrigger>ifelifpre</tabTrigger>
     <scope>source.c, source.objc, source.c++, source.objc++</scope>
 </snippet>
