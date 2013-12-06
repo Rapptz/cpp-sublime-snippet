@@ -1,0 +1,35 @@
+[
+    {
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "C++ Snippets",
+                        "children":
+                        [
+                            {
+                                "command": "open_file",
+                                "args": {"file": "${packages}/C++ Snippets/README.md"},
+                                "caption": "README"
+                            },
+                            { "caption": "-" },
+                            {
+                                "command": "open_file",
+                                "args": {"file": "${packages}/C++ Snippets/reference.md"},
+                                "caption": "View Documentation"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
