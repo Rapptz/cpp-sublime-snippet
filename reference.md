@@ -104,6 +104,17 @@ using $1 = $2;
 template<typename $1>
 ```
 
+**Trigger**: try
+
+```cpp
+try {
+    $1
+}
+catch($2) {
+    $0
+}
+```
+
 **Trigger**: mitl
 
 A snippet that generates an MIT License with input choices for your name and year.
@@ -199,6 +210,7 @@ $2
 $4
 #else
 $0
+#endif
 ```
 
 **Trigger**: ifelsepre
@@ -208,6 +220,7 @@ $0
 $2
 #else
 $0
+#endif
 ```
 
 ### Classes
