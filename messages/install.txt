@@ -1,7 +1,3 @@
-====================
-    C++ Snippets
-====================
-
 Hello!
 
 Thanks for installing this package. This package started out of some frustration
@@ -18,5 +14,8 @@ snippets.
 
 Documentation for the snippets can be found the reference, which can is conveniently
 here: https://github.com/Rapptz/cpp-sublime-snippet/blob/master/reference.md
+
+If you'd like to view the reference.md file offline, you can find it under 
+Preferences > C++ Snippets > View Documentation
 
 Thank you for using these snippets!
