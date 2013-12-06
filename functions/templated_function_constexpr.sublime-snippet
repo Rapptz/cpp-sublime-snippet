@@ -5,5 +5,5 @@ constexpr ${2:int} ${3:function_name}(${4:/* args */}) {
 	return ${5:/* code */};
 }]]></content>
     <tabTrigger>tempcfunc</tabTrigger>
-    <scope>source.c++</scope>
+    <scope>source.c++, source.c++11</scope>
 </snippet>

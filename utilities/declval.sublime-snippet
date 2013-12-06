@@ -2,5 +2,5 @@
     <description>std::declval&lt;T&gt;()</description>
     <content><![CDATA[std::declval<${1:T}>()]]></content>
     <tabTrigger>declv</tabTrigger>
-    <scope>source.c++</scope>
+    <scope>source.c++, source.c++11</scope>
 </snippet>

@@ -4,5 +4,5 @@
 	return ${0:/* code */};
 }]]></content>
     <tabTrigger>confunct</tabTrigger>
-    <scope>source.c++</scope>
+    <scope>source.c++, source.c++11</scope>
 </snippet>

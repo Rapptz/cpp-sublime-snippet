@@ -6,5 +6,5 @@ ${2:/* code */}
 ${0:/*code */}
 #endif]]></content>
     <tabTrigger>ifelsepre</tabTrigger>
-    <scope>source.c, source.objc, source.c++, source.objc++</scope>
+    <scope>source.c, source.objc, source.c++, source.objc++, source.c++11</scope>
 </snippet>

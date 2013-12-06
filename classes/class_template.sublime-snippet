@@ -7,5 +7,5 @@ public:
 	${2/(\w+).*/$1/}(${4:/* args */}) ${5:= default;}
 };]]></content>
     <tabTrigger>classtemp</tabTrigger>
-    <scope>source.c++, source.objc++</scope>
+    <scope>source.c++, source.objc++, source.c++11</scope>
 </snippet>

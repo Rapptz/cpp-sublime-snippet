@@ -10,5 +10,5 @@ else {
 	${0:/* code */}
 }]]></content>
     <tabTrigger>ifelif</tabTrigger>
-    <scope>source.c, source.objc, source.c++, source.objc++</scope>
+    <scope>source.c, source.objc, source.c++, source.objc++, source.c++11</scope>
 </snippet>

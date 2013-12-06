@@ -7,5 +7,5 @@
 	}
 };]]></content>
     <tabTrigger>tempfunctor</tabTrigger>
-    <scope>source.c++</scope>
+    <scope>source.c++, source.c++11</scope>
 </snippet>

@@ -2,5 +2,5 @@
 	<description>template</description>
     <content><![CDATA[template<typename ${1:T}>]]></content>
     <tabTrigger>tem</tabTrigger>
-    <scope>source.c++, source.objc++</scope>
+    <scope>source.c++, source.objc++, source.c++11</scope>
 </snippet>

@@ -4,5 +4,5 @@
 	${0:/* code */}
 } while (${1:/* condition */});]]></content>
     <tabTrigger>do_</tabTrigger>
-    <scope>source.c, source.objc, source.c++, source.objc++</scope>
+    <scope>source.c, source.objc, source.c++, source.objc++, source.c++11</scope>
 </snippet>

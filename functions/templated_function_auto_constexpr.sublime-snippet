@@ -5,5 +5,5 @@ constexpr auto ${2:function_name}(${3:/* args */}) noexcept -> decltype(${4:/* c
 	return ${4:/* code */};
 }]]></content>
     <tabTrigger>tempcfunca</tabTrigger>
-    <scope>source.c++</scope>
+    <scope>source.c++, source.c++11</scope>
 </snippet>
