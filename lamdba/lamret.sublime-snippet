@@ -3,6 +3,6 @@
 	<content><![CDATA[[${1:capture}](${2:args}) -> ${3:return} {
 	${4:/*code*/}
 }]]></content>
-	<tabTrigger>lamfull</tabTrigger>
+	<tabTrigger>lamret</tabTrigger>
 	<scope>source.c++, source.c++11</scope>
 </snippet>
