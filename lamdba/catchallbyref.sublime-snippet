@@ -1,6 +1,6 @@
 <snippet>
 	<description>Lambda - catch all by reference</description>
-	<content><![CDATA[[=](${1:args}) {
+	<content><![CDATA[[&](${1:args}) {
 	${2:/*code*/}
 }]]></content>
 	<tabTrigger>lamref</tabTrigger>
