@@ -17,14 +17,19 @@
                         [
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/C++ Snippets/README.md"},
+                                "args": { "file": "${packages}/C++ Snippets/README.md" },
                                 "caption": "README"
                             },
                             { "caption": "-" },
                             {
+                                "command": "open_url",
+                                "args": { "url": "https://github.com/Rapptz/cpp-sublime-snippet/blob/master/reference.md" },
+                                "caption": "View Documentation (Online)"
+                            },
+                            {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/C++ Snippets/reference.md"},
-                                "caption": "View Documentation"
+                                "args": { "file": "${packages}/C++ Snippets/reference.md" },
+                                "caption": "View Documentation (Offline)"
                             }
                         ]
                     }
