@@ -1,5 +1,5 @@
 <snippet>
-    <description>-> decltype(...)</description>
+    <description>-&gt; decltype(…)</description>
     <content><![CDATA[-> decltype(${1:/* code */}) {
 	return ${1:/* code */};
 }]]></content>
