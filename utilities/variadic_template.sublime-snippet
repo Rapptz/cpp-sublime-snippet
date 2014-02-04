@@ -1,5 +1,5 @@
 <snippet>
-	<description>template</description>
+	<description>variadic template</description>
 	<content><![CDATA[template<typename... ${1:Args}>]]></content>
 	<tabTrigger>temv</tabTrigger>
 	<scope>source.c++, source.objc++, source.c++11</scope>
