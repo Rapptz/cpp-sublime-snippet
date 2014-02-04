@@ -14,6 +14,7 @@ your preference.
 - [Conditional Statements](#conditional-statements)
 - [Preprocessor](#preprocessor)
 - [Classes](#classes)
+- [Lambda](#lambda)
 - [Functions](#functions)
 - [Functors](#functors)
 
@@ -274,6 +275,50 @@ class $1 : public $2 {
 public:
     $1(const std::string& str): $2($3) {}
 };
+```
+
+### Lambda
+
+Snippets to insert C++11 lambdas of different flavours.
+
+**Trigger**: lamref
+
+```cpp
+[&]($1) {
+    $2
+}
+```
+
+**Trigger**: lamval
+
+```cpp
+[=]($1) {
+    $2
+}
+```
+
+**Trigger**: lamret
+
+```cpp
+[$1]($2) -> $3 {
+    $4
+}
+```
+
+**Trigger**: lammin
+
+```cpp
+[$1] {
+    $2
+}
+```
+
+**Trigger**: lamfull
+
+```cpp
+[$1]($2) $3 $4 -> $5 {
+    $6
+}
 ```
 
 ### Functions
