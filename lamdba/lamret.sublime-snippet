@@ -1,0 +1,8 @@
+<snippet>
+	<description>Lambda - Explicit return declaration</description>
+	<content><![CDATA[[${1:capture}](${2:args}) -> ${3:return} {
+	${4:/*code*/}
+}]]></content>
+	<tabTrigger>lamret</tabTrigger>
+	<scope>source.c++, source.c++11</scope>
+</snippet>
