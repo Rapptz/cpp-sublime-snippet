@@ -4,7 +4,8 @@
 ${2:/* code */}
 #else
 ${0:/*code */}
-#endif]]></content>
+#endif
+]]></content>
     <tabTrigger>ifelsepre</tabTrigger>
     <scope>source.c, source.objc, source.c++, source.objc++, source.c++11</scope>
 </snippet>

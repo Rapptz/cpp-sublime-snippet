@@ -6,7 +6,8 @@ ${2:/* code */}
 ${4:/* code */}
 #else
 ${0:/* code */}
-#endif]]></content>
+#endif
+]]></content>
     <tabTrigger>ifelifpre</tabTrigger>
     <scope>source.c, source.objc, source.c++, source.objc++, source.c++11</scope>
 </snippet>
