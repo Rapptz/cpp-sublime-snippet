@@ -6,6 +6,7 @@
 ${0}
 
 #endif // $1
+
 ]]></content>
     <tabTrigger>ifnd</tabTrigger>
     <scope>source.c, source.objc, source.c++, source.objc++, source.c++11</scope>
