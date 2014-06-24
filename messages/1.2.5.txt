@@ -1,0 +1,13 @@
+====================
+     Change-log
+====================
+
+Thanks for downloading this package!
+
+Changes from v1.2.0 to v1.2.5 include:
+
+- Preprocessor snippets end with a newline.
+- New snippet: `beginend_` which expands to `std::begin($1), std::end($1)`.
+
+As always, if you would like to add a snippet feel free to send me a pull
+request on GitHub: https://github.com/Rapptz/cpp-sublime-snippet

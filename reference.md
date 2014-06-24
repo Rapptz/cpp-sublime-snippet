@@ -120,6 +120,12 @@ catch($2) {
 
 A snippet that generates an MIT License with input choices for your name and year.
 
+**Trigger**: beginend_
+
+```cpp
+std::begin($1), std::end($1)
+```
+
 ### Conditional Statements
 
 **Trigger**: if_
@@ -357,7 +363,7 @@ $2 $3($4) noexcept {
 
 **Trigger**: tempfunca
 
-This snippet doesn't use the same input for the return type and decltype specifier. 
+This snippet doesn't use the same input for the return type and decltype specifier.
 If you want that, use `tempcfunc` instead.
 
 ```cpp
