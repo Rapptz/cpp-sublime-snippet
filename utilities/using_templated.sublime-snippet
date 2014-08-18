@@ -3,5 +3,5 @@
     <content><![CDATA[template<typename ${1:T}>
 using ${2:Type} = ${3:typename T::type};]]></content>
     <tabTrigger>usingt</tabTrigger>
-    <scope>source.c++, source.c++11</scope>
+    <scope>source.c++</scope>
 </snippet>

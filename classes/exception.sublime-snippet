@@ -5,5 +5,5 @@ public:
 	${1/(\w+).*/$1/}(const std::string& str) noexcept: ${2:std::logic_error}(${3:str}) {}
 };]]></content>
     <tabTrigger>excep</tabTrigger>
-    <scope>source.c++, source.objc++, source.c++11</scope>
+    <scope>source.c++, source.objc++</scope>
 </snippet>

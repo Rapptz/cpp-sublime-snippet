@@ -2,5 +2,5 @@
     <description>GCC version &gt;= check</description>
     <content><![CDATA[defined(__GNUC__) && ((__GNUC__ > ${1:4}) || ((__GNUC__ == ${1:4}) && (__GNUC_MINOR__ >= ${2:7})))]]></content>
     <tabTrigger>gccgreater</tabTrigger>
-    <scope>source.c, source.objc, source.c++, source.objc++, source.c++11</scope>
+    <scope>source.c, source.objc, source.c++, source.objc++</scope>
 </snippet>

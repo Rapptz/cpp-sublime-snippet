@@ -5,5 +5,5 @@ $0
 } // $1
 ]]></content>
     <tabTrigger>name</tabTrigger>
-    <scope>source.c++, source.objc++, source.c++11</scope>
+    <scope>source.c++, source.objc++</scope>
 </snippet>

@@ -5,5 +5,5 @@ ${2:int} ${3:function_name}(${4:/* args */}) noexcept {
 	$0
 }]]></content>
     <tabTrigger>tempfunc</tabTrigger>
-    <scope>source.c++, source.c++11</scope>
+    <scope>source.c++</scope>
 </snippet>

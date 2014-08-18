@@ -4,5 +4,5 @@
 	${0:/* code */}
 }]]></content>
     <tabTrigger>if_</tabTrigger>
-    <scope>source.c, source.objc, source.c++, source.objc++, source.c++11</scope>
+    <scope>source.c, source.objc, source.c++, source.objc++</scope>
 </snippet>

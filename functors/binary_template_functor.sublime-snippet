@@ -7,5 +7,5 @@
 	}
 };]]></content>
     <tabTrigger>bintempfunctor</tabTrigger>
-    <scope>source.c++, source.c++11</scope>
+    <scope>source.c++</scope>
 </snippet>
