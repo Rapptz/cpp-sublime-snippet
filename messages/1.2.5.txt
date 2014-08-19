@@ -9,6 +9,15 @@ Changes from v1.2.0 to v1.2.5 include:
 - Preprocessor snippets end with a newline.
 - New snippet: `beginend_` which expands to `std::begin($1), std::end($1)`.
 - Removal of the source.c++11 scope
+- New category of snippets: traits
+    - Implements different ways of making type traits
+    - To avoid conflict with regular code, these will have the cpptrait prefix
+    - Currently, only one is provided: cpptraitfun to create a type trait
+      based on trait inheritance.
+
+Documentation could be found through the usual manner:
+Preferences > Package Settings > C++ Snippets
 
 As always, if you would like to add a snippet feel free to send me a pull
-request on GitHub: https://github.com/Rapptz/cpp-sublime-snippet
+request on GitHub. Issues, comments, etc are welcome too:
+https://github.com/Rapptz/cpp-sublime-snippet

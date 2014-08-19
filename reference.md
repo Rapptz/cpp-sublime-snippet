@@ -15,6 +15,7 @@ your preference.
 - [Preprocessor](#preprocessor)
 - [Classes](#classes)
 - [Lambda](#lambda)
+- [Traits](#traits)
 - [Functions](#functions)
 - [Functors](#functors)
 
@@ -325,6 +326,38 @@ Snippets to insert C++11 lambdas of different flavours.
 [$1]($2) $3 $4 -> $5 {
     $6
 }
+```
+
+### Traits
+
+**Trigger**: cpptraitfun
+
+```cpp
+struct $1_impl {
+    template<typename T, $2>
+    static std::true_type test(int);
+    template<typename...>
+    static std::false_type test(...);
+};
+
+template<typename T>
+struct $1 : decltype($1_impl::test<T>(0)) {};
+```
+
+Implements a type trait that uses inheritance and expression SFINAE
+to do the heavy work. This is typically used to check if a typedef
+exists. For example, checking if const_iterator exists:
+
+```cpp
+struct has_const_iterator_impl {
+    template<typename T, typename U = typename T::const_iterator>
+    static std::true_type test(int);
+    template<typename...>
+    static std::false_type test(...);
+};
+
+template<typename T>
+struct has_const_iterator : decltype(has_const_iterator_impl::test<T>(0)) {};
 ```
 
 ### Functions
