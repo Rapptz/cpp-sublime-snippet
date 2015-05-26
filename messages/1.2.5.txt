@@ -16,6 +16,8 @@ Changes from v1.2.0 to v1.2.5 include:
       based on trait inheritance.
 - MIT license is wrapped to 80-column (thanks @miquelmassot)
 - install message is now wrapped properly (thanks @kleinfreund)
+- exception snippet now inherits from `std::runtime_error`.
+- exception snippet no longer has a noexcept constructor
 
 Documentation could be found through the usual manner:
 Preferences > Package Settings > C++ Snippets
