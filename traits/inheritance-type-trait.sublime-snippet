@@ -8,7 +8,7 @@
 };
 
 template<typename T>
-struct ${1:my_trait} : decltype(${1:my_trait}::test<T>(0)) {};
+struct ${1:my_trait} : decltype(${1:my_trait}_impl::test<T>(0)) {};
 $0]]></content>
     <tabTrigger>cpptraitfun</tabTrigger>
     <scope>source.c++</scope>
