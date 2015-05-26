@@ -7,7 +7,7 @@ Thanks again for downloading this package!
 Changes from v1.2.0 to v1.2.5 include:
 
 - Preprocessor snippets end with a newline.
-- New snippet: `beginend_` which expands to `std::begin($1), std::end($1)`.
+- New snippet: `beginend_` which expands to `begin($1), end($1)`.
 - Removal of the source.c++11 scope
 - New category of snippets: traits
     - Implements different ways of making type traits
