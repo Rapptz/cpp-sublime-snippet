@@ -2,7 +2,7 @@
      Change-log
 ====================
 
-Thanks for downloading this package!
+Thanks again for downloading this package!
 
 Changes from v1.2.0 to v1.2.5 include:
 
@@ -11,9 +11,11 @@ Changes from v1.2.0 to v1.2.5 include:
 - Removal of the source.c++11 scope
 - New category of snippets: traits
     - Implements different ways of making type traits
-    - To avoid conflict with regular code, these will have the cpptrait prefix
+    - To avoid conflict these will have the cpptrait prefix
     - Currently, only one is provided: cpptraitfun to create a type trait
       based on trait inheritance.
+- MIT license is wrapped to 80-column (thanks @miquelmassot)
+- install message is now wrapped properly (thanks @kleinfreund)
 
 Documentation could be found through the usual manner:
 Preferences > Package Settings > C++ Snippets
