@@ -4,27 +4,35 @@
         "children":
         [
             {
-                "id": "cpp-snippets",
-                "caption": "C++ Snippets",
+                "id": "packages",
+                "caption": "Packages",
                 "children":
                 [
                     {
-                        "command": "open_file",
-                        "args": { "file": "${packages}/C++ Snippets/README.md" },
-                        "caption": "Open README.md"
-                    },
-                    {
-                        "caption": "-"
-                    },
-                    {
-                        "command": "open_url",
-                        "args": { "url": "https://github.com/Rapptz/cpp-sublime-snippet/blob/master/reference.md" },
-                        "caption": "View Documentation (Online)"
-                    },
-                    {
-                        "command": "open_file",
-                        "args": { "file": "${packages}/C++ Snippets/reference.md" },
-                        "caption": "View Documentation (Offline)"
+
+                        "id": "cpp-snippets",
+                        "caption": "C++ Snippets",
+                        "children":
+                        [
+                            {
+                                "command": "open_file",
+                                "args": { "file": "${packages}/C++ Snippets/README.md" },
+                                "caption": "Open README.md"
+                            },
+                            {
+                                "caption": "-"
+                            },
+                            {
+                                "command": "open_url",
+                                "args": { "url": "https://github.com/Rapptz/cpp-sublime-snippet/blob/master/reference.md" },
+                                "caption": "View Documentation (Online)"
+                            },
+                            {
+                                "command": "open_file",
+                                "args": { "file": "${packages}/C++ Snippets/reference.md" },
+                                "caption": "View Documentation (Offline)"
+                            }
+                        ]
                     }
                 ]
             }
