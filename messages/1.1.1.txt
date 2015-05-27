@@ -1,6 +1,5 @@
 ====================
-    C++ Snippets
-     Change-log
+     Changelog
 ====================
 
 Thanks for downloading this package!
@@ -28,12 +27,12 @@ New Snippets:
 
 Changed Snippets:
 
-The old tempfunca snippet no longer has the constexpr qualifier and shared 
+The old tempfunca snippet no longer has the constexpr qualifier and shared
 input from decltype and return statement.
 
 All conflicting snippets will now have a leading underscore, so for example
-the struct snippet will now be struct_. The exception to this is range-based for
-which used to be forv but is now forrange.
+the struct snippet will now be struct_. The exception to this is range-based
+for which used to be forv but is now forrange.
 
-As always, reference can be found here: 
+As always, reference can be found here:
 https://github.com/Rapptz/cpp-sublime-snippet/blob/master/reference.md

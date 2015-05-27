@@ -1,13 +1,13 @@
 ====================
-     Change-log
+     Changelog
 ====================
 
 Thanks for downloading this package!
 
 Changes from v1.1.4 to v1.2.0 include:
 
-- Addition of lambda snippets. Triggered by lamref, lamval, lamret,
-lammin, and lamfull. Credit for these snippets go to @bigdavedev.
+- Addition of lambda snippets. Triggered by lamref, lamval, lamret, lammin,
+and lamfull. Credit for these snippets go to @bigdavedev.
 - Fix the description of the variadic template description.
 
 As always, if you would like to add a snippet feel free to send me a pull

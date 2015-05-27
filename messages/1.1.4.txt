@@ -1,13 +1,13 @@
 ====================
-     Change-log
+     Changelog
 ====================
 
 Thanks for downloading this package!
 
 Changes from v1.1.3 to v1.1.4 include:
 
-- Added ability to view online documentation through the menu.
-  You can get to the menu by going Preferences > Package Settings > C++ Snippets
+- Added ability to view online documentation through the menu. You can get
+  to the menu by going Preferences > Package Settings > C++ Snippets
 - New snippet added for variadic templates. Triggered by temv.
 
 As always, if you would like to add a snippet feel free to send me a pull
