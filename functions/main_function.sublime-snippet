@@ -1,0 +1,11 @@
+<snippet>
+	<description>main(…)</description>
+	<content><![CDATA[
+int main(int argc, char const *argv[]) {
+	${1:/* code */}
+	return 0;
+}
+]]></content>
+	<tabTrigger>main_</tabTrigger>
+	<scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>

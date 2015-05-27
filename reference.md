@@ -364,6 +364,14 @@ struct has_const_iterator : decltype(has_const_iterator_impl::test<T>(0)) {};
 
 #### Regular functions
 
+**Trigger**: main_
+
+```cpp
+int main(int argc, char const *argv[]) {
+    $1
+    return 0;
+}
+```
 
 **Trigger**: funct
 
