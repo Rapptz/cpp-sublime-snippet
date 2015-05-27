@@ -14,7 +14,8 @@ Changes from v1.2.5 to v1.3.0 include:
 - Adding a section to the README regarding the installation process:
   How to install without Package Control or Git
 - Fixing heading hierarchy in reference.md and README.md
-- Moving the package menu entry from Preferences > Package Settings to Tools > Packages
+- Moving the package menu entry from Preferences > Package Settings
+  to Tools > Packages
 
 Documentation could be found through the usual manner:
 Tools > Packages > C++ Snippets
