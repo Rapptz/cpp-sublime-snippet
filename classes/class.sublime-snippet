@@ -1,10 +1,13 @@
 <snippet>
-    <content><![CDATA[class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}} {
+	<description>Class</description>
+	<content><![CDATA[
+class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}} {
 private:
 	${2:/* data */}
 public:
 	${1/(\w+).*/$1/}(${3:/* args */}) ${4:= default;}
-};]]></content>
-    <tabTrigger>class_</tabTrigger>
-    <scope>source.c++, source.objc++</scope>
+};
+]]></content>
+	<tabTrigger>class_</tabTrigger>
+	<scope>source.c++, source.objc++</scope>
 </snippet>

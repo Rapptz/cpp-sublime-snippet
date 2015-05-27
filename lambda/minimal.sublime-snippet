@@ -1,8 +1,10 @@
 <snippet>
-	<description>Lambda - Minimal</description>
-	<content><![CDATA[[${1:/* capture */}] {
+	<description>Lambda – Minimal</description>
+	<content><![CDATA[
+[${1:/* capture */}] {
 	${2:/* code */}
-}]]></content>
+}
+]]></content>
 	<tabTrigger>lammin</tabTrigger>
 	<scope>source.c++, source.c++11</scope>
 </snippet>

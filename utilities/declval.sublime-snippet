@@ -1,6 +1,8 @@
 <snippet>
-    <description>std::declval&lt;T&gt;()</description>
-    <content><![CDATA[std::declval<${1:T}>()]]></content>
-    <tabTrigger>declv</tabTrigger>
-    <scope>source.c++</scope>
+	<description>std::declval&lt;T&gt;()</description>
+	<content><![CDATA[
+std::declval<${1:T}>()
+]]></content>
+	<tabTrigger>declv</tabTrigger>
+	<scope>source.c++</scope>
 </snippet>

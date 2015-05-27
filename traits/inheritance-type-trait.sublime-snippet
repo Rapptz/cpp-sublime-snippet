@@ -1,6 +1,7 @@
 <snippet>
-    <description>Do While Loop</description>
-    <content><![CDATA[struct ${1:my_trait}_impl {
+	<description>Do While Loop</description>
+	<content><![CDATA[
+struct ${1:my_trait}_impl {
 	template<typename T, ${$2:/* expression SFINAE here */}>
 	static std::true_type test(int);
 	template<typename...>
@@ -9,7 +10,8 @@
 
 template<typename T>
 struct ${1:my_trait} : decltype(${1:my_trait}_impl::test<T>(0)) {};
-$0]]></content>
-    <tabTrigger>cpptraitfun</tabTrigger>
-    <scope>source.c++</scope>
+$0
+]]></content>
+	<tabTrigger>cpptraitfun</tabTrigger>
+	<scope>source.c++</scope>
 </snippet>

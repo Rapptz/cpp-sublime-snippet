@@ -1,8 +1,10 @@
 <snippet>
-    <description>constexpr function</description>
-    <content><![CDATA[constexpr ${1:int} ${2:function_name}(${3:/* args */}) {
+	<description>Constexpr Function</description>
+	<content><![CDATA[
+constexpr ${1:int} ${2:function_name}(${3:/* args */}) {
 	return ${0:/* code */};
-}]]></content>
-    <tabTrigger>confunct</tabTrigger>
-    <scope>source.c++</scope>
+}
+]]></content>
+	<tabTrigger>confunct</tabTrigger>
+	<scope>source.c++</scope>
 </snippet>

@@ -1,11 +1,13 @@
 <snippet>
-	<description>Unary template functor</description>
-    <content><![CDATA[struct ${1:name} {
+	<description>Unary Template Functor</description>
+	<content><![CDATA[
+struct ${1:name} {
 	template<typename T>
 	constexpr auto operator()(T&& t) const noexcept -> decltype(${2:/* code */}) {
 		return ${2:/* code */};
 	}
-};]]></content>
-    <tabTrigger>tempfunctor</tabTrigger>
-    <scope>source.c++</scope>
+};
+]]></content>
+	<tabTrigger>tempfunctor</tabTrigger>
+	<scope>source.c++</scope>
 </snippet>
