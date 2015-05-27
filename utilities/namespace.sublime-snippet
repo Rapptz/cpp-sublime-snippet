@@ -3,7 +3,7 @@
 	<content><![CDATA[
 namespace ${1:name} {
 	$0
-}
+} // $1
 ]]></content>
 	<tabTrigger>name</tabTrigger>
 	<scope>source.c++, source.objc++</scope>
