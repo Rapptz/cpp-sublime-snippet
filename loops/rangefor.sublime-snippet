@@ -1,8 +1,10 @@
 <snippet>
-	<description>range-based for</description>
-    <content><![CDATA[for(auto&& ${1:i} : ${2:v}) {
+	<description>Range-based For Loop</description>
+	<content><![CDATA[
+for(auto&& ${1:i} : ${2:v}) {
 	$0
-}]]></content>
-    <tabTrigger>forrange</tabTrigger>
-    <scope>source.c, source.objc, source.c++, source.objc++</scope>
+}
+]]></content>
+	<tabTrigger>forrange</tabTrigger>
+	<scope>source.c, source.objc, source.c++, source.objc++</scope>
 </snippet>

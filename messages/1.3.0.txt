@@ -1,0 +1,25 @@
+====================
+     Changelog
+====================
+
+Thanks again for downloading this package!
+
+Changes from v1.2.5 to v1.3.0 include:
+
+- Snippets:
+  - New snippet for the `main()` function
+  - Use tabs consistently (no mixed indentation)
+  - Separate `<![CDATA[` and `]]>` from actual code snippets
+  - Updating the reference accordingly
+- Adding a section to the README regarding the installation process:
+  How to install without Package Control or Git
+- Fixing heading hierarchy in reference.md and README.md
+- Moving the package menu entry from Preferences > Package Settings
+  to Tools > Packages
+
+Documentation could be found through the usual manner:
+Tools > Packages > C++ Snippets
+
+As always, if you would like to add a snippet feel free to send me a pull
+request on GitHub. Issues, comments, etc. are welcome too:
+https://github.com/Rapptz/cpp-sublime-snippet

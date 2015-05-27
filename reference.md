@@ -1,11 +1,10 @@
-## Documentation
+# Documentation
 
-In this documentation, `$1` represents the first tabbed input, all the way to `$n`. `$0` represents the last place you end up in after you're done tabbing. If there are two `$n`, e.g. `$1 f($1)`, then that means whatever you input will be put in those two places. If you see `${2:$1}` then that means that you can input part of $2 first, in this case $1, and then tab over to the whole expression, which in this case is `$2`.
+In this documentation, `$1` represents the first tabbed input, all the way to `$n`. `$0` represents the last place you end up in after you’re done tabbing. If there are two `$n`, e.g. `$1 f($1)`, then that means a caret will be created at each of these locations. If you see `${2:$1}` then that means that you can input part of `$2` first, in this case `$1`, and then tab over to the whole expression, which in this case is `$2`.
 
 To activate a snippet just type the trigger and then press tab.
 
-Although the snippets show up as having four spaces in the reference, in the actual snippet it will substitute it with
-your preference.
+Although the snippets show up as having four spaces in the reference, in the actual snippet it will substitute it with your used setting.
 
 ## Table of Contents
 
@@ -19,7 +18,7 @@ your preference.
 - [Functions](#functions)
 - [Functors](#functors)
 
-### Loops
+## Loops
 
 A collection of loop auto completions.
 
@@ -55,7 +54,7 @@ for(auto&& $1 : $2) {
 }
 ```
 
-### Utilities
+## Utilities
 
 Small simple stuff that can help with some typing.
 
@@ -127,7 +126,7 @@ A snippet that generates an MIT License with input choices for your name and yea
 std::begin($1), std::end($1)
 ```
 
-### Conditional Statements
+## Conditional Statements
 
 **Trigger**: if_
 
@@ -162,7 +161,7 @@ else {
 }
 ```
 
-### Preprocessor
+## Preprocessor
 
 **Trigger**: ifnd
 
@@ -231,7 +230,7 @@ $0
 #endif
 ```
 
-### Classes
+## Classes
 
 **Trigger**: struct_
 
@@ -284,7 +283,7 @@ public:
 };
 ```
 
-### Lambda
+## Lambda
 
 Snippets to insert C++11 lambdas of different flavours.
 
@@ -328,7 +327,7 @@ Snippets to insert C++11 lambdas of different flavours.
 }
 ```
 
-### Traits
+## Traits
 
 **Trigger**: cpptraitfun
 
@@ -344,9 +343,7 @@ template<typename T>
 struct $1 : decltype($1_impl::test<T>(0)) {};
 ```
 
-Implements a type trait that uses inheritance and expression SFINAE
-to do the heavy work. This is typically used to check if a typedef
-exists. For example, checking if const_iterator exists:
+Implements a type trait that uses inheritance and expression SFINAE to do the heavy work. This is typically used to check if a typedef exists. For example, checking if const_iterator exists:
 
 ```cpp
 struct has_const_iterator_impl {
@@ -360,9 +357,9 @@ template<typename T>
 struct has_const_iterator : decltype(has_const_iterator_impl::test<T>(0)) {};
 ```
 
-### Functions
+## Functions
 
-#### Regular functions
+### Regular functions
 
 **Trigger**: main_
 
@@ -391,7 +388,7 @@ constexpr $1 $2($3) {
 }
 ```
 
-#### Templated Functions
+### Templated Functions
 
 **Trigger**: tempfunc
 
@@ -404,8 +401,7 @@ $2 $3($4) noexcept {
 
 **Trigger**: tempfunca
 
-This snippet doesn't use the same input for the return type and decltype specifier.
-If you want that, use `tempcfunc` instead.
+This snippet doesn’t use the same input for the return type and decltype specifier. If you want that, use `tempcfunc` instead.
 
 ```cpp
 template<typename $1>
@@ -432,7 +428,7 @@ constexpr auto $2($3) noexcept -> decltype($4) {
 }
 ```
 
-### Functors
+## Functors
 
 **Trigger**: functor
 

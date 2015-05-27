@@ -1,8 +1,10 @@
 <snippet>
-	<description>Lambda - catch all by value</description>
-	<content><![CDATA[[=](${1:/* args */}) {
+	<description>Lambda – Catch All by Value</description>
+	<content><![CDATA[
+[=](${1:/* args */}) {
 	${2:/* code */}
-}]]></content>
+}
+]]></content>
 	<tabTrigger>lamval</tabTrigger>
 	<scope>source.c++, source.c++11</scope>
 </snippet>

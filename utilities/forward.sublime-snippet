@@ -1,6 +1,8 @@
 <snippet>
-    <description>std::forward&lt;T&gt;(…)</description>
-    <content><![CDATA[std::forward<${1:T}>(${2:t})]]></content>
-    <tabTrigger>forw</tabTrigger>
-    <scope>source.c++</scope>
+	<description>std::forward&lt;T&gt;(…)</description>
+	<content><![CDATA[
+std::forward<${1:T}>(${2:t})
+]]></content>
+	<tabTrigger>forw</tabTrigger>
+	<scope>source.c++</scope>
 </snippet>

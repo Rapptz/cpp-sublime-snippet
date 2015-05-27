@@ -1,13 +1,13 @@
 <snippet>
-    <description>ifndef (…)</description>
-    <content><![CDATA[#ifndef $1
+	<description>ifndef (…)</description>
+	<content><![CDATA[
+#ifndef $1
 #define ${1:${TM_FILENAME/(([A-Z])([A-Z][a-z]))|(([a-z])([A-Z]))|([a-z])|(\.)/\U(?1:$2_$3)(?4:$5_$6)$7(?8:_)\E/g}}
 
 ${0}
 
 #endif // $1
-
 ]]></content>
-    <tabTrigger>ifnd</tabTrigger>
-    <scope>source.c, source.objc, source.c++, source.objc++</scope>
+	<tabTrigger>ifnd</tabTrigger>
+	<scope>source.c, source.objc, source.c++, source.objc++</scope>
 </snippet>

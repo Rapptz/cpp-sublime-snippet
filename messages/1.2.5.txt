@@ -1,5 +1,5 @@
 ====================
-     Change-log
+     Changelog
 ====================
 
 Thanks again for downloading this package!
@@ -23,5 +23,5 @@ Documentation could be found through the usual manner:
 Preferences > Package Settings > C++ Snippets
 
 As always, if you would like to add a snippet feel free to send me a pull
-request on GitHub. Issues, comments, etc are welcome too:
+request on GitHub. Issues, comments, etc. are welcome too:
 https://github.com/Rapptz/cpp-sublime-snippet

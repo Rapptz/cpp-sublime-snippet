@@ -1,8 +1,10 @@
 <snippet>
-    <description>-&gt; decltype(…)</description>
-    <content><![CDATA[-> decltype(${1:/* code */}) {
+	<description>-&gt; decltype(…)</description>
+	<content><![CDATA[
+-> decltype(${1:/* code */}) {
 	return ${1:/* code */};
-}]]></content>
-    <tabTrigger>returns</tabTrigger>
-    <scope>source.c++</scope>
+}
+]]></content>
+	<tabTrigger>returns</tabTrigger>
+	<scope>source.c++</scope>
 </snippet>

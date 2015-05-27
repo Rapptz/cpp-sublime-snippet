@@ -1,9 +1,11 @@
 <snippet>
 	<description>Create exception</description>
-    <content><![CDATA[class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}} : public ${2:std::runtime_error} {
+	<content><![CDATA[
+class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:name}} : public ${2:std::runtime_error} {
 public:
 	${1/(\w+).*/$1/}(const std::string& str): ${2:std::runtime_error}(${3:str}) {}
-};]]></content>
-    <tabTrigger>excep</tabTrigger>
-    <scope>source.c++, source.objc++</scope>
+};
+]]></content>
+	<tabTrigger>excep</tabTrigger>
+	<scope>source.c++, source.objc++</scope>
 </snippet>

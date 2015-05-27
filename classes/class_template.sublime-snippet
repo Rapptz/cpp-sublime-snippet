@@ -1,11 +1,14 @@
 <snippet>
-    <content><![CDATA[template<typename ${1:T}>
+	<description>Class Template</description>
+	<content><![CDATA[
+template<typename ${1:T}>
 class ${2:${TM_FILENAME/(.+)\..+|.*/$1/:name}} {
 private:
 	${3:/* data */}
 public:
 	${2/(\w+).*/$1/}(${4:/* args */}) ${5:= default;}
-};]]></content>
-    <tabTrigger>classtemp</tabTrigger>
-    <scope>source.c++, source.objc++</scope>
+};
+]]></content>
+	<tabTrigger>classtemp</tabTrigger>
+	<scope>source.c++, source.objc++</scope>
 </snippet>

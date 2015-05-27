@@ -1,6 +1,8 @@
 <snippet>
-    <description>Using statement</description>
-    <content><![CDATA[using ${1:my_type} = ${2:int};]]></content>
-    <tabTrigger>usings</tabTrigger>
-    <scope>source.c++</scope>
+	<description>Using Statement</description>
+	<content><![CDATA[
+using ${1:my_type} = ${2:int};
+]]></content>
+	<tabTrigger>usings</tabTrigger>
+	<scope>source.c++</scope>
 </snippet>

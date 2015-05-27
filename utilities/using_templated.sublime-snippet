@@ -1,7 +1,9 @@
 <snippet>
-    <description>Using statement (templated)</description>
-    <content><![CDATA[template<typename ${1:T}>
-using ${2:Type} = ${3:typename T::type};]]></content>
-    <tabTrigger>usingt</tabTrigger>
-    <scope>source.c++</scope>
+	<description>Using Statement (Templated)</description>
+	<content><![CDATA[
+template<typename ${1:T}>
+using ${2:Type} = ${3:typename T::type};
+]]></content>
+	<tabTrigger>usingt</tabTrigger>
+	<scope>source.c++</scope>
 </snippet>
