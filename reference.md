@@ -83,7 +83,7 @@ std::declval<$1>()
 ```cpp
 namespace $1 {
 $0
-}
+} // $1
 ```
 
 **Trigger**: usingt
@@ -171,7 +171,7 @@ else {
 
 $0
 
-#endif
+#endif // $1
 ```
 
 This snippet defaults to inserting the filename in all caps. e.g. `myheader.hpp` would generate `MYHEADER_HPP`.
