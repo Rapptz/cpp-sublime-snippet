@@ -18,7 +18,7 @@ conveniently here:
 https://github.com/Rapptz/cpp-sublime-snippet/blob/master/reference.md
 
 If you’d like to view the reference.md file offline, you can find it under 
-Preferences > Package Settings > C++ Snippets > View Documentation (Offline).
+Tools > Packages > C++ Snippets > View Documentation (Offline).
 It’s also available on the git repository in View Documentation (Online).
 
 Thank you for using these snippets!
