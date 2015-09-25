@@ -1,7 +1,7 @@
 <snippet>
 	<description>Range-based For Loop</description>
 	<content><![CDATA[
-for(auto&& ${1:i} : ${2:v}) {
+for (auto&& ${1:i} : ${2:v}) {
 	$0
 }
 ]]></content>

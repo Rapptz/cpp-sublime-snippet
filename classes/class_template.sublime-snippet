@@ -2,7 +2,7 @@
 	<description>Class Template</description>
 	<content><![CDATA[
 template<typename ${1:T}>
-class ${2:${TM_FILENAME/(.+)\..+|.*/$1/:name}} {
+class ${2:${TM_FILENAME/(.+)\..+|.*/\u$1/:name}} {
 private:
 	${3:/* data */}
 public:

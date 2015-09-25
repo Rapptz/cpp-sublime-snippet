@@ -1,7 +1,7 @@
 <snippet>
 	<description>For Loop</description>
 	<content><![CDATA[
-for(unsigned ${2:i} = 0; $2 < ${1:count}; ${3:++$2}) {
+for (unsigned ${2:i} = 0; $2 < ${1:count}; ${3:++$2}) {
 	${0:/* code */}
 }
 ]]></content>

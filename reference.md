@@ -33,7 +33,7 @@ do {
 **Trigger**: while
 
 ```cpp
-while($1) {
+while ($1) {
     $0
 }
 ```
@@ -41,7 +41,7 @@ while($1) {
 **Trigger**: for_
 
 ```cpp
-for(unsigned $2 = 0; $2 < $1; ${3:++$2}) {
+for (unsigned $2 = 0; $2 < $1; ${3:++$2}) {
     $0
 }
 ```
@@ -49,7 +49,7 @@ for(unsigned $2 = 0; $2 < $1; ${3:++$2}) {
 **Trigger**: forrange
 
 ```cpp
-for(auto&& $1 : $2) {
+for (auto&& $1 : $2) {
     $0
 }
 ```
@@ -131,7 +131,7 @@ std::begin($1), std::end($1)
 **Trigger**: if_
 
 ```cpp
-if($1) {
+if ($1) {
     $0
 }
 ```
@@ -139,10 +139,9 @@ if($1) {
 **Trigger**: ifelse
 
 ```cpp
-if($1) {
+if ($1) {
     $2
-}
-else {
+} else {
     $0
 }
 ```
@@ -150,13 +149,11 @@ else {
 **Trigger**: ifelif
 
 ```cpp
-if($1) {
+if ($1) {
     $2
-}
-else if($3) {
+} else if ($3) {
     $4
-}
-else {
+} else {
     $0
 }
 ```
@@ -290,7 +287,7 @@ Snippets to insert C++11 lambdas of different flavours.
 **Trigger**: lamref
 
 ```cpp
-[&]($1) {
+[&] ($1) {
     $2
 }
 ```
@@ -298,7 +295,7 @@ Snippets to insert C++11 lambdas of different flavours.
 **Trigger**: lamval
 
 ```cpp
-[=]($1) {
+[=] ($1) {
     $2
 }
 ```
@@ -306,7 +303,7 @@ Snippets to insert C++11 lambdas of different flavours.
 **Trigger**: lamret
 
 ```cpp
-[$1]($2) -> $3 {
+[$1] ($2) -> $3 {
     $4
 }
 ```
@@ -322,7 +319,7 @@ Snippets to insert C++11 lambdas of different flavours.
 **Trigger**: lamfull
 
 ```cpp
-[$1]($2) $3 $4 -> $5 {
+[$1] ($2) $3 $4 -> $5 {
     $6
 }
 ```

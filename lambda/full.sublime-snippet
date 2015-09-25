@@ -1,7 +1,7 @@
 <snippet>
 	<description>Lambda – Full Spec</description>
 	<content><![CDATA[
-[${1:/* capture */}](${2:/* args */}) ${3:mutable} ${4:noexcept} -> ${5:/* return */} {
+[${1:/* capture */}] (${2:/* args */}) ${3:mutable} ${4:noexcept} -> ${5:/* return */} {
 	${6:/* code */}
 }
 ]]></content>
