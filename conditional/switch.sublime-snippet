@@ -1,7 +1,7 @@
 <snippet>
-	<description>switch(…)</description>
+	<description>switch (…)</description>
 	<content><![CDATA[
-switch(${1:/* condition */}) {
+switch (${1:/* condition */}) {
 	case ${2:/* case 1 */}:
 		${3:/* code */}
 		break;

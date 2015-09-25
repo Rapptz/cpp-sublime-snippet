@@ -1,7 +1,7 @@
 <snippet>
-	<description>if(…)</description>
+	<description>if (…)</description>
 	<content><![CDATA[
-if(${1:/* condition */}) {
+if (${1:/* condition */}) {
 	${0:/* code */}
 }
 ]]></content>
