@@ -1,0 +1,8 @@
+<snippet>
+	<description>Conditional operator</description>
+	<content><![CDATA[
+${1:cond} ? ${2:true} : ${3:false};
+]]></content>
+	<tabTrigger>cond</tabTrigger>
+	<scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>

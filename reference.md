@@ -161,6 +161,12 @@ else {
 }
 ```
 
+**Trigger**: cond
+
+```cpp
+$1 ? $2 : $3;
+```
+
 ## Preprocessor
 
 **Trigger**: ifnd
